@@ -1,7 +1,9 @@
 package app.daos;
 
+import app.entities.Library;
 import app.entities.Review;
 import app.entities.User;
+import app.entities.Wishlist;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityNotFoundException;
@@ -11,7 +13,7 @@ import java.util.List;
 import java.util.Set;
 
 public class UserDAO implements IDAO<User>{
-    EntityManagerFactory emf;
+    private EntityManagerFactory emf;
 
 
     public UserDAO(EntityManagerFactory _emf){
@@ -20,6 +22,14 @@ public class UserDAO implements IDAO<User>{
     @Override
     public User create(User user) {
         try(EntityManager em = emf.createEntityManager()){
+
+            Library library = new Library(user);
+            Wishlist wishlist = new Wishlist();
+
+            wishlist.setUser(user);
+
+            user.setLibrary(library);
+            user.setWishlist(wishlist);
             em.getTransaction().begin();
             em.persist(user);
             em.getTransaction().commit();
