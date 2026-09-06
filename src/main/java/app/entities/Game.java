@@ -1,5 +1,6 @@
 package app.entities;
 
+import app.dtos.GameDetailDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -22,4 +23,21 @@ public class Game {
     private String developer;
     private LocalDate dateReleased;
     private String description;
+
+
+    public static Game fromDTO(GameDetailDTO dto) {
+        Game game = new Game();
+        game.setName(dto.name());
+        game.setDescription(dto.descriptionRaw());
+
+        if (dto.released() != null && !dto.released().isBlank()) {
+            game.setDateReleased(LocalDate.parse(dto.released()));
+        }
+
+        if (dto.developers() != null && !dto.developers().isEmpty()) {
+            game.setDeveloper(dto.developers().get(0).name());
+        }
+
+        return game;
+    }
 }

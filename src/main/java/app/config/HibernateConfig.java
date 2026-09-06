@@ -1,6 +1,7 @@
 package app.config;
 
-import dk.ek.utils.Utils;
+import app.entities.*;
+import app.utils.Utils;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -77,10 +78,13 @@ public class HibernateConfig {
 
     // TODO: IMPORTANT: Add Entity classes here for them to be registered with Hibernate
     private static void getAnnotationConfiguration(Configuration configuration) {
-        configuration.addAnnotatedClass(Student.class);
-        configuration.addAnnotatedClass(Course.class);
-        configuration.addAnnotatedClass(Teacher.class);
-        configuration.addAnnotatedClass(Employee.class);
+        configuration.addAnnotatedClass(User.class);
+        configuration.addAnnotatedClass(Game.class);
+        configuration.addAnnotatedClass(GameInLibrary.class);
+        configuration.addAnnotatedClass(Library.class);
+        configuration.addAnnotatedClass(Review.class);
+        configuration.addAnnotatedClass(Wishlist.class);
+        configuration.addAnnotatedClass(GameInWishlist.class);
     }
 
     private static EntityManagerFactory createEMF() {
