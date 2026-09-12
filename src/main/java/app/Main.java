@@ -1,9 +1,13 @@
 package app;
 
 import app.config.HTTPClient;
+import app.config.HibernateConfig;
+import app.daos.GameDAO;
 import app.dtos.GameDTO;
 import app.dtos.ResultDTO;
 import app.entities.Game;
+import app.service.GamePersist;
+import jakarta.persistence.EntityManagerFactory;
 
 import java.util.List;
 
@@ -14,6 +18,7 @@ public class Main {
 
 
         HTTPClient httpClient = new HTTPClient();
+        EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory();
 
 /*
        ResultDTO result = httpClient.getGames();
@@ -27,10 +32,13 @@ public class Main {
 
 
        } */
-        List<Game> games = httpClient.fetchGamesWithDetails();
+     /*   List<Game> games = httpClient.fetchGamesWithDetails();
         for (Game game : games){
-            System.out.println(game);
-        }
+            System.out.println(game); }
+       */
+
+        GamePersist service = new GamePersist(new HTTPClient(), new GameDAO(emf));
+        service.importGames();
 
         } }
 
