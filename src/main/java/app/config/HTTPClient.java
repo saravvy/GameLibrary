@@ -132,18 +132,6 @@ public class HTTPClient {
 
         } }
 
-            public List<Game> fetchGamesWithDetails() throws Exception {
-                HTTPClient httpClient = new HTTPClient();
-                ResultDTO result = httpClient.getGames();
-                List<Game> games = new ArrayList<>();
 
-
-                for (GameDTO gameDTO : result.games()) {
-                    GameDetailDTO detail = httpClient.getGameDetails(gameDTO.id());
-                    Game game = Game.fromDTO(detail);
-                    games.add(game);
-                }
-                return games;
-            }
 
     }

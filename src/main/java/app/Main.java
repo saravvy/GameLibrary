@@ -20,6 +20,12 @@ public class Main {
         HTTPClient httpClient = new HTTPClient();
         EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory();
 
+        GameDAO gameDAO = new GameDAO(emf);
+        GamePersist gamePersist = new GamePersist(httpClient, gameDAO);
+
+        List<Game> importedGames = gamePersist.importGames();
+
+        System.out.println(importedGames);
 /*
        ResultDTO result = httpClient.getGames();
        for (GameDTO game : result.games()) {
@@ -37,8 +43,7 @@ public class Main {
             System.out.println(game); }
        */
 
-        GamePersist service = new GamePersist(new HTTPClient(), new GameDAO(emf));
-        service.importGames();
+
 
         } }
 
