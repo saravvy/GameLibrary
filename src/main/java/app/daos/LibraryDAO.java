@@ -107,7 +107,7 @@ public class LibraryDAO implements IDAO<Library>, ILibraryDAO {
     }
 
     @Override
-    public void removeGame(Library library, Game game) {
+    public boolean removeGame(Library library, Game game) {
         if (!containsGame(library, game)) {
             throw new IllegalStateException("Game isnt in library");
         }
@@ -123,6 +123,7 @@ public class LibraryDAO implements IDAO<Library>, ILibraryDAO {
             em.getTransaction().begin();
             em.remove(em.merge(game1));
             em.getTransaction().commit();
+            return true;
 
         }
 

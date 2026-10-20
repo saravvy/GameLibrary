@@ -1,6 +1,6 @@
 package app.service;
 
-import app.config.HTTPClient;
+import app.config.Fetcher;
 import app.daos.GameDAO;
 import app.dtos.GameDTO;
 import app.dtos.GameDetailDTO;
@@ -15,10 +15,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class GamePersist {
-    private HTTPClient httpClient;
+    private Fetcher httpClient;
     private GameDAO gameDAO;
 
-    public GamePersist(HTTPClient httpClient, GameDAO gameDAO) {
+    public GamePersist(Fetcher httpClient, GameDAO gameDAO) {
         this.httpClient = httpClient;
         this.gameDAO = gameDAO;
     }

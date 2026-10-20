@@ -27,7 +27,7 @@ public class UserDAO implements IDAO<User>{
             Wishlist wishlist = new Wishlist();
 
             wishlist.setUser(user);
-
+            user.setRole(user.getRole());
             user.setLibrary(library);
             user.setWishlist(wishlist);
             em.getTransaction().begin();
@@ -38,7 +38,8 @@ public class UserDAO implements IDAO<User>{
     }
 
     @Override
-    public void remove(User user) {
+    public boolean remove(User user) {
+
         try(EntityManager em = emf.createEntityManager()){
             User found = em.find(User.class, user.getId());
             if(found == null)
@@ -46,7 +47,9 @@ public class UserDAO implements IDAO<User>{
             em.getTransaction().begin();
             em.remove(found);
             em.getTransaction().commit();
+
             System.out.println("Removal successfull!:)");
+            return true;
 
     } }
 
@@ -77,6 +80,17 @@ public class UserDAO implements IDAO<User>{
     public Set<User> getAll() {
         try(EntityManager em = emf.createEntityManager()){
             return new HashSet<>(em.createQuery("SELECT e FROM User e", User.class).getResultList());
+        }
+    }
+
+    public User getByName(String name) {
+        try (EntityManager em = emf.createEntityManager()) {
+            return em.createQuery(
+                            "SELECT u FROM User u WHERE u.name = :name", User.class)
+                    .setParameter("name", name)
+                    .getResultStream()
+                    .findFirst()
+                    .orElse(null);
         }
     }
 }

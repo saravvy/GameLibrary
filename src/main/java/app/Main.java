@@ -1,15 +1,12 @@
 package app;
 
-import app.config.HTTPClient;
+import app.config.AplicationConfig;
+import app.config.Fetcher;
 import app.config.HibernateConfig;
 import app.daos.GameDAO;
-import app.dtos.GameDTO;
-import app.dtos.ResultDTO;
-import app.entities.Game;
+import app.routes.Routes;
 import app.service.GamePersist;
 import jakarta.persistence.EntityManagerFactory;
-
-import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -17,16 +14,23 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
 
-        HTTPClient httpClient = new HTTPClient();
+        Fetcher fetcher = new Fetcher();
         EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory();
 
         GameDAO gameDAO = new GameDAO(emf);
-        GamePersist gamePersist = new GamePersist(httpClient, gameDAO);
 
-        List<Game> importedGames = gamePersist.importGames();
 
-        System.out.println(importedGames);
-/*
+        Routes routes = new Routes();
+        AplicationConfig aplicationConfig = new AplicationConfig(routes);
+
+     //   GamePersist gamePersist = new GamePersist(fetcher, gameDAO);
+
+      //  List<Game> importedGames = gamePersist.importGames();
+
+       // System.out.println(importedGames);
+
+
+        /*
        ResultDTO result = httpClient.getGames();
        for (GameDTO game : result.games()) {
            System.out.println(game);

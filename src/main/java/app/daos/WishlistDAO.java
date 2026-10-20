@@ -31,7 +31,7 @@ public class WishlistDAO implements IDAO<Wishlist>{
     }
 
     @Override
-    public void remove(Wishlist wishlist) {
+    public boolean remove(Wishlist wishlist) {
         try(EntityManager em = emf.createEntityManager()){
             Wishlist found = em.find(Wishlist.class, wishlist.getId());
             if(found == null)
@@ -40,6 +40,7 @@ public class WishlistDAO implements IDAO<Wishlist>{
             em.remove(found);
             em.getTransaction().commit();
             System.out.println("Removal successfull!:)");
+            return true;
 
         } }
 

@@ -1,19 +1,15 @@
 package app.config;
 
-import app.dtos.GameDTO;
 import app.dtos.GameDetailDTO;
 import app.dtos.ResultDTO;
-import app.entities.Game;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.ArrayList;
-import java.util.List;
 
-public class HTTPClient {
+public class Fetcher {
 
 
     public ResultDTO getGames() throws Exception {

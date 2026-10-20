@@ -3,6 +3,9 @@ package app.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.mindrot.jbcrypt.BCrypt;
+
+import java.util.Set;
 
 @Entity
 @NoArgsConstructor
@@ -10,11 +13,11 @@ import lombok.*;
 @Setter
 @ToString
 @Table(name = "users")
-public class User {
+public class User implements ISecurityUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String name;
+    private String username;
     private String password;
 
     @Enumerated(EnumType.STRING)
@@ -26,6 +29,23 @@ public class User {
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Wishlist wishlist;
+
+    public User(String username, String password) {
+        this.username = username;
+        String salt = BCrypt.gensalt();
+        this.password = BCrypt.hashpw(password, salt);
+    }
+
+
+    @Override
+    public String getRoleAsStrings() {
+        return this.role.toString();
+    }
+
+    @Override
+    public boolean verifyPassword(String pw) {
+        return BCrypt.checkpw(pw,this.password);
+    }
 
 
 

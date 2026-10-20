@@ -13,7 +13,7 @@ public interface ILibraryDAO {
 
     GameInLibrary addGame(Library library, Game game);
 
-    void removeGame(Library library, Game game);
+    boolean removeGame(Library library, Game game);
 
     List<GameInLibrary> getGames(Library library);
 

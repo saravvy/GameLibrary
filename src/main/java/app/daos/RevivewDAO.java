@@ -31,7 +31,7 @@ public class RevivewDAO implements IDAO<Review> {
     }
 
     @Override
-    public void remove(Review review) {
+    public boolean remove(Review review) {
         try(EntityManager em = emf.createEntityManager()){
             Review found = em.find(Review.class, review.getId());
             if(found == null)
@@ -40,6 +40,7 @@ public class RevivewDAO implements IDAO<Review> {
             em.remove(found);
             em.getTransaction().commit();
             System.out.println("Removal successfull!:)");
+            return true;
 
         } }
 
