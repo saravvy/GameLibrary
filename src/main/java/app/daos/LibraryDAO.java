@@ -31,7 +31,7 @@ public class LibraryDAO implements IDAO<Library>, ILibraryDAO {
     }
 
     @Override
-    public void remove(Library library) {
+    public boolean remove(Library library) {
         try (EntityManager em = emf.createEntityManager()) {
             Library found = em.find(Library.class, library.getId());
             if (found == null)
@@ -41,6 +41,7 @@ public class LibraryDAO implements IDAO<Library>, ILibraryDAO {
             em.getTransaction().commit();
             System.out.println("Removal successfull!:)");
 
+            return true;
         }
     }
 
@@ -151,4 +152,7 @@ public class LibraryDAO implements IDAO<Library>, ILibraryDAO {
             }
         } return false;
     }
+
+
+
 }

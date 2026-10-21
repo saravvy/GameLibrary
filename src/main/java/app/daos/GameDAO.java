@@ -28,7 +28,7 @@ public class GameDAO implements IDAO<Game>{
     }
 
     @Override
-    public void remove(Game game) {
+    public boolean remove(Game game) {
         try(EntityManager em = emf.createEntityManager()){
             Game found = em.find(Game.class, game.getId());
             if(found == null)
@@ -37,6 +37,7 @@ public class GameDAO implements IDAO<Game>{
             em.remove(found);
             em.getTransaction().commit();
             System.out.println("Removal successfull!:)");
+            return true;
 
         } }
 

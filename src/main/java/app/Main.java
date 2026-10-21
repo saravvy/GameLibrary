@@ -3,9 +3,11 @@ package app;
 import app.config.AplicationConfig;
 import app.config.Fetcher;
 import app.config.HibernateConfig;
-import app.daos.GameDAO;
+import app.controllers.*;
+import app.daos.*;
 import app.routes.Routes;
 import app.service.GamePersist;
+import io.javalin.Javalin;
 import jakarta.persistence.EntityManagerFactory;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -18,10 +20,25 @@ public class Main {
         EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory();
 
         GameDAO gameDAO = new GameDAO(emf);
+        RevivewDAO revivewDAO = new RevivewDAO(emf);
+        LibraryDAO libraryDAO = new LibraryDAO(emf);
+        SecurityDAO securityDAO = new SecurityDAO(emf);
+        UserDAO userDAO = new UserDAO(emf);
+        WishlistDAO wishlistDAO = new WishlistDAO(emf);
+
+        GameController gameController = new GameController(gameDAO);
+        ReviewController reviewController =new ReviewController(revivewDAO);
+        LibraryController libraryController = new LibraryController(libraryDAO,userDAO,gameDAO);
+        SecurityController securityController = new SecurityController(securityDAO,userDAO);
+        UserController userController = new UserController(userDAO);
+        WishlistController wishlistController = new WishlistController(wishlistDAO,userDAO,gameDAO);
 
 
-        Routes routes = new Routes();
+        Routes routes = new Routes(gameController,userController,reviewController,libraryController,wishlistController,securityController);
         AplicationConfig aplicationConfig = new AplicationConfig(routes);
+
+
+        aplicationConfig.startServer(7070);
 
      //   GamePersist gamePersist = new GamePersist(fetcher, gameDAO);
 

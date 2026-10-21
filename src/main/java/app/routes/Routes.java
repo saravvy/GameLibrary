@@ -12,13 +12,15 @@ public class Routes {
     private final ReviewController reviewController;
     private final LibraryController libraryController;
     private final WishlistController wishlistController;
+    private final SecurityController securityController;
 
-    public Routes(GameController gameController, UserController userController, ReviewController reviewController, LibraryController libraryController, WishlistController wishlistController) {
+    public Routes(GameController gameController, UserController userController, ReviewController reviewController, LibraryController libraryController, WishlistController wishlistController, SecurityController securityController) {
         this.gameController = gameController;
         this.userController = userController;
         this.reviewController = reviewController;
         this.libraryController = libraryController;
         this.wishlistController = wishlistController;
+        this.securityController = securityController;
     }
 
     public EndpointGroup getRoutes(){
@@ -53,6 +55,12 @@ public class Routes {
                 get("/{userId}", wishlistController::getGames);
                 post("/{userId}/games/{gameId}", wishlistController::addGame);
                 delete("/{userId}/games/{gameId}", wishlistController::removeGame);
+            });
+
+            path("/auth", ()->{
+
+                post("/login", securityController::login );
+                post("/register", securityController::register);
             });
 
         };

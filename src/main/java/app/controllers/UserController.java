@@ -12,7 +12,11 @@ import java.util.Set;
 
 
 public class UserController {
-private UserDAO userDAO;
+private final UserDAO userDAO;
+
+    public UserController(UserDAO userDAO) {
+        this.userDAO = userDAO;
+    }
 
 
    /* public void login(Context ctx) {
