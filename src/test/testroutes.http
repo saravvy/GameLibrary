@@ -1,0 +1,22 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+
+
+GET http://localhost:7070/api/game
+
+
+###
+
+POST http://localhost:7070/api/auth/register
+
+
+{
+    "username": "testuser",
+  "password": "123456",
+  "role" : "USER"
+
+}
+
