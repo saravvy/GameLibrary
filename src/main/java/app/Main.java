@@ -37,7 +37,7 @@ public class Main {
         Routes routes = new Routes(gameController,userController,reviewController,libraryController,wishlistController,securityController);
         AplicationConfig aplicationConfig = new AplicationConfig(routes);
 
-
+//hej
         aplicationConfig.startServer(7070);
 
      //   GamePersist gamePersist = new GamePersist(fetcher, gameDAO);
