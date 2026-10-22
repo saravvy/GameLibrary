@@ -39,7 +39,8 @@ public class User implements ISecurityUser {
 
     @Override
     public String getRoleAsStrings() {
-        return this.role.toString();
+
+        return this.getRole().toString();
     }
 
     @Override

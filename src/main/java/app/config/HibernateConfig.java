@@ -130,10 +130,6 @@ public class HibernateConfig {
         props.put("hibernate.connection.driver_class", "org.postgresql.Driver");
         props.put("hibernate.hbm2ddl.auto", "update");
         props.put("hibernate.current_session_context_class", "thread");
-        String showSql = Utils.getPropertyValue("hibernate.show_sql", "config.properties");
-        props.put("hibernate.show_sql", showSql);
-        props.put("hibernate.format_sql", showSql);
-        props.put("hibernate.use_sql_comments", showSql);
         return props;
     }
 
@@ -150,6 +146,10 @@ public class HibernateConfig {
         props.put("hibernate.connection.url", "jdbc:postgresql://" + host + ":" + port + "/" + getDBName());
         props.put("hibernate.connection.username", Utils.getPropertyValue("db.username", "config.properties"));
         props.put("hibernate.connection.password", Utils.getPropertyValue("db.password", "config.properties"));
+        String showSql = Utils.getPropertyValue("hibernate.show_sql", "config.properties");
+        props.put("hibernate.show_sql", showSql);
+        props.put("hibernate.format_sql", showSql);
+        props.put("hibernate.use_sql_comments", showSql);
         return props;
     }
 

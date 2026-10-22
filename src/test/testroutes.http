@@ -20,3 +20,6 @@ POST http://localhost:7070/api/auth/register
 
 }
 
+###
+
+GET http://localhost:7070/api/users
