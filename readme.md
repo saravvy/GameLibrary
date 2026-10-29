@@ -58,8 +58,6 @@ Technologier i mit projekt:
 
 ## Important Entities
 
-Briefly describe the main entities in your system.
-
 ### User
 Entititen user repræsenterer et bruger i systemet.
 
