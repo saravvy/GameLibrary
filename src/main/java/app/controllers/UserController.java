@@ -19,18 +19,6 @@ private final UserDAO userDAO;
     }
 
 
-   /* public void login(Context ctx) {
-        User loginRequest = ctx.bodyAsClass(User.class);
-        User user = userDAO.getByName(loginRequest.getUsername());
-
-        if (user == null || !user.getPassword().equals(loginRequest.getPassword())) {
-            ctx.status(401).result("Invalid username or password");
-            return;
-        }
-
-        ctx.status(200).json(user);
-    } */
-
     public void getAll(Context ctx) {
         Set<User> users = userDAO.getAll();
 
@@ -42,13 +30,30 @@ private final UserDAO userDAO;
     }
 
     public void create(Context ctx){
-        User user = ctx.bodyAsClass(User.class);
+        User user = ctx.bodyValidator(User.class)
+                .check(u -> u.getUsername() != null && !u.getUsername().isBlank(), "Username is required")
+                .check(u -> u.getPassword() != null && !u.getPassword().isBlank(), "Password is required")
+                .get();
+
+        try {
+            if (userDAO.getByName(user.getUsername()) != null) {
+                ctx.status(HttpStatus.CONFLICT).json(Map.of(
+                        "message", "Username already exists"
+                ));
+                return;
+            }
+
         User newUser = userDAO.create(user);
         UserDTO userDTO = UserDTO.fromEntity(newUser);
 
         ctx.status(HttpStatus.CREATED);
         ctx.json(userDTO);
-    }
+    } catch (Exception e) {
+            ctx.status(HttpStatus.BAD_REQUEST).json(Map.of(
+                    "message", "Could not create user"
+            )); }}
+
+
 
     public void delete(Context ctx){
 

@@ -34,11 +34,23 @@ public class LibraryDAO implements IDAO<Library>, ILibraryDAO {
     public boolean remove(Library library) {
         try (EntityManager em = emf.createEntityManager()) {
             Library found = em.find(Library.class, library.getId());
-            if (found == null)
+
+            if (found == null) {
                 throw new EntityNotFoundException("No entity found");
+            }
+
             em.getTransaction().begin();
+
+            User user = found.getUser();
+
+            if (user != null) {
+                user.setLibrary(null);
+                found.setUser(null);
+            }
+
             em.remove(found);
             em.getTransaction().commit();
+
             System.out.println("Removal successfull!:)");
 
             return true;
@@ -143,14 +155,17 @@ public class LibraryDAO implements IDAO<Library>, ILibraryDAO {
     @Override
     public boolean containsGame(Library library, Game game) {
         try (EntityManager em = emf.createEntityManager()) {
-            List<GameInLibrary> games = library.getGames();
-            for (GameInLibrary g : games) {
-                if (g.getGame().equals(game)) {
-                    return true;
-                }
+            Long count = em.createQuery(
+                            "SELECT COUNT(g) FROM GameInLibrary g " +
+                                    "WHERE g.library.id = :libraryId " +
+                                    "AND g.game.id = :gameId",
+                            Long.class)
+                    .setParameter("libraryId", library.getId())
+                    .setParameter("gameId", game.getId())
+                    .getSingleResult();
 
-            }
-        } return false;
+            return count > 0;
+        }
     }
 
 

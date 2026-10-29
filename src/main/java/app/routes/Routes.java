@@ -26,41 +26,41 @@ public class Routes {
     public EndpointGroup getRoutes(){
         return ()->{
             path("/game",()->{
-                get("",gameController::getAll);
-                get("/{id}",gameController::getById);
-                post("/",gameController::create);
-                delete("/{id}", gameController ::delete);
+                get("",gameController::getAll, AppRouteRole.ANYONE);
+                get("/{id}",gameController::getById, AppRouteRole.ANYONE);
+                post("/",gameController::create, AppRouteRole.ADMIN);
+                delete("/{id}", gameController ::delete, AppRouteRole.ADMIN);
 
             });  path("/users", () -> {
                 get("", userController::getAll);
                 get("/{id}", userController::getById);
                 post("", userController::create);
-                delete("/{id}", userController::delete);
+                delete("/{id}", userController::delete, AppRouteRole.ADMIN);
             });
 
             path("/reviews", () -> {
                 get("", reviewController::getAll);
                 get("/{id}", reviewController::getById);
-                post("", reviewController::create);
-                delete("/{id}", reviewController::delete);
+                post("/{gameId}", reviewController::create);
+                delete("/{id}", reviewController::delete, AppRouteRole.ADMIN);
             });
 
             path("/library", () -> {
                 get("/{userId}", libraryController::getGames);
                 post("/{userId}/games/{gameId}", libraryController::addGame);
-                delete("/{userId}/games/{gameId}", libraryController::removeGame);
+                delete("/{userId}/games/{gameId}", libraryController::removeGame, AppRouteRole.ADMIN);
             });
 
             path("/wishlist", () -> {
                 get("/{userId}", wishlistController::getGames);
                 post("/{userId}/games/{gameId}", wishlistController::addGame);
-                delete("/{userId}/games/{gameId}", wishlistController::removeGame);
+                delete("/{userId}/games/{gameId}", wishlistController::removeGame, AppRouteRole.ADMIN);
             });
 
             path("/auth", ()->{
 
-                post("/login", securityController::login );
-                post("/register", securityController::register);
+                post("/login", securityController::login, AppRouteRole.ANYONE );
+                post("/register", securityController::register, AppRouteRole.ANYONE);
             });
 
         };

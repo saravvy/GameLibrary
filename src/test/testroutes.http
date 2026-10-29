@@ -14,12 +14,50 @@ POST http://localhost:7070/api/auth/register
 
 
 {
-    "username": "testuser",
-  "password": "123456",
-  "role" : "USER"
+   "name": "user4567",
+  "password": "1234562",
+  "role" : "ADMIN"
 
 }
 
 ###
 
 GET http://localhost:7070/api/users
+
+###
+
+POST http://localhost:7070/api/auth/login
+
+{
+
+"name": "user4567",
+  "password": "1234562"
+
+}
+
+###
+
+POST http://localhost:7070/api/library/8/games/1
+
+
+###
+
+POST http://localhost:7070/api/library/8/games/1
+
+###
+
+POST http://localhost:7070/api/reviews/67
+
+{
+    "stars": 5,
+    "description": "this game is so good",
+    "added": "2026-10-29",
+    "user": {
+        "id": 8
+    }
+}
+
+###
+
+DELETE http://localhost:7070/api/reviews/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTYXJhIiwic3ViIjoidXNlcjQ1NjciLCJleHAiOjE3OTMyOTY0OTEsInJvbGVzIjoiQURNSU4iLCJ1c2VybmFtZSI6InVzZXI0NTY3In0.F_PbuXFRqSexDal_9mR0rR4NZimfOXR4xbSlb9RUBPo

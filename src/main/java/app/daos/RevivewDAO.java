@@ -73,4 +73,17 @@ public class RevivewDAO implements IDAO<Review> {
             return new HashSet<>(em.createQuery("SELECT e FROM Review e", Review.class).getResultList());
         }
     }
+    public boolean existsByUserAndGame(int userId, int gameId) {
+        try (EntityManager em = emf.createEntityManager()) {
+            Long count = em.createQuery(
+                            "SELECT COUNT(r) FROM Review r " +
+                                    "WHERE r.user.id = :userId AND r.game.id = :gameId",
+                            Long.class)
+                    .setParameter("userId", userId)
+                    .setParameter("gameId", gameId)
+                    .getSingleResult();
+
+            return count > 0;
+        }
+    }
 }

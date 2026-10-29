@@ -1,6 +1,7 @@
 package app.entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.mindrot.jbcrypt.BCrypt;
@@ -18,17 +19,20 @@ public class User implements ISecurityUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String username;
+    @JsonIgnore
     private String password;
 
     @Enumerated(EnumType.STRING)
     private Role role;
 
-
+    @JsonIgnore
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Library library;
 
+    @JsonIgnore
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Wishlist wishlist;
+
 
     public User(String username, String password) {
         this.username = username;

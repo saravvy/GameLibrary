@@ -6,12 +6,16 @@ import org.slf4j.LoggerFactory;
 
 @Getter
 public class ApiException extends RuntimeException {
-    private final int code;
+    private final int statusCode;
     private static final Logger logger = LoggerFactory.getLogger(ApiException.class);
 
-    public ApiException(int code, String msg){
+    public ApiException(int statusCode, String msg){
         super(msg);
-        this.code = code;
-        logger.error("ApiException (code={}): {}", code, msg);
+        this.statusCode = statusCode;
+        logger.error("StatusCode: {}, Message: {},",statusCode, msg);
+    }
+
+    public int getStatusCode() {
+        return statusCode;
     }
 }

@@ -27,7 +27,7 @@ public class Main {
         WishlistDAO wishlistDAO = new WishlistDAO(emf);
 
         GameController gameController = new GameController(gameDAO);
-        ReviewController reviewController =new ReviewController(revivewDAO);
+        ReviewController reviewController =new ReviewController(revivewDAO, gameDAO, userDAO);
         LibraryController libraryController = new LibraryController(libraryDAO,userDAO,gameDAO);
         SecurityController securityController = new SecurityController(securityDAO,userDAO);
         UserController userController = new UserController(userDAO);
@@ -35,9 +35,8 @@ public class Main {
 
 
         Routes routes = new Routes(gameController,userController,reviewController,libraryController,wishlistController,securityController);
-        AplicationConfig aplicationConfig = new AplicationConfig(routes);
+        AplicationConfig aplicationConfig = new AplicationConfig(routes, securityController);
 
-//hej
         aplicationConfig.startServer(7070);
 
      //   GamePersist gamePersist = new GamePersist(fetcher, gameDAO);

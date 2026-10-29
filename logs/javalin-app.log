@@ -1,0 +1,564 @@
+2026-10-22 11:54:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-22 11:54:48 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-22 11:54:48 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-22 11:54:48 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-22 11:54:48 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-22 11:54:48 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-22 11:54:48 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-22 11:54:48 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-22 11:54:49 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-22 11:54:49 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-22 11:54:51 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@632b305d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-22 11:54:52 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-22 11:54:52 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-22 11:54:52 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-22 11:54:52 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@4b07cad0{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@507049f2{STARTED}}
+2026-10-22 11:54:52 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@4b07cad0{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@507049f2{STARTED}}
+2026-10-22 11:54:52 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@5e0f2c82{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-22 11:54:52 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@98637a2{STARTING}[12.1.12,sto=0] @173ms
+2026-10-22 11:54:52 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-22 11:54:52 [main] INFO  io.javalin.Javalin - Javalin started in 604ms \o/
+2026-10-22 11:54:52 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-22 11:54:53 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 15:45:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 15:45:06 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 15:45:07 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 15:45:07 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 15:45:07 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 15:45:07 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 15:45:07 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 15:45:07 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 15:45:07 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 15:45:08 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 15:45:10 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3830f918] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 15:45:12 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 15:45:12 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 15:45:12 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 15:45:12 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@2084e65a{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@1b8fa2fa{STARTED}}
+2026-10-29 15:45:12 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@2084e65a{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@1b8fa2fa{STARTED}}
+2026-10-29 15:45:12 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@605c7a9e{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 15:45:12 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@21c75084{STARTING}[12.1.12,sto=0] @250ms
+2026-10-29 15:45:12 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 15:45:12 [main] INFO  io.javalin.Javalin - Javalin started in 753ms \o/
+2026-10-29 15:45:12 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 15:45:12 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 17:07:52 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 17:07:52 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 17:07:53 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 17:07:53 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 17:07:53 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 17:07:53 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 17:07:53 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 17:07:53 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 17:07:54 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 17:07:55 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 17:07:56 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@27a6fef2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 17:07:58 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 17:07:58 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 17:07:58 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 17:07:58 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@3dc82e6a{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@54463380{STARTED}}
+2026-10-29 17:07:58 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@3dc82e6a{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@54463380{STARTED}}
+2026-10-29 17:07:58 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@45e7bb79{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 17:07:58 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@605c7a9e{STARTING}[12.1.12,sto=0] @206ms
+2026-10-29 17:07:58 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 17:07:58 [main] INFO  io.javalin.Javalin - Javalin started in 874ms \o/
+2026-10-29 17:07:58 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 17:07:58 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 17:11:50 [JettyServerThreadPool-31] ERROR app.config.AplicationConfig - Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 5, column: 1]
+2026-10-29 17:12:04 [JettyServerThreadPool-32] ERROR app.config.AplicationConfig - Unrecognized field "username" (class app.dtos.UserDTO), not marked as ignorable (4 known properties: "id", "role", "name", "password")
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 6, column: 2] (through reference chain: app.dtos.UserDTO["username"])
+2026-10-29 17:12:14 [JettyServerThreadPool-32] ERROR app.config.AplicationConfig - Invalid salt version
+2026-10-29 17:12:23 [JettyServerThreadPool-34] ERROR app.config.AplicationConfig - Unrecognized field "username" (class app.dtos.UserDTO), not marked as ignorable (4 known properties: "id", "role", "name", "password")
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 6, column: 2] (through reference chain: app.dtos.UserDTO["username"])
+2026-10-29 17:12:51 [JettyServerThreadPool-33] ERROR app.config.AplicationConfig - Invalid salt version
+2026-10-29 17:32:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 17:32:39 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 17:32:39 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 17:32:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 17:32:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 17:32:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 17:32:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 17:32:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 17:32:40 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 17:32:41 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 17:32:42 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2db15f70] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 17:32:43 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 17:32:43 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 17:32:43 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 17:32:43 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@38bc5ac0{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@6ef037e4{STARTED}}
+2026-10-29 17:32:43 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@38bc5ac0{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@6ef037e4{STARTED}}
+2026-10-29 17:32:43 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@45e7bb79{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 17:32:43 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@605c7a9e{STARTING}[12.1.12,sto=0] @190ms
+2026-10-29 17:32:43 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 17:32:43 [main] INFO  io.javalin.Javalin - Javalin started in 613ms \o/
+2026-10-29 17:32:43 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 17:32:43 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 17:46:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 17:46:26 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 17:46:28 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 17:46:28 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 17:46:28 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 17:46:28 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 17:46:28 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 17:46:28 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 17:46:29 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 17:46:30 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 17:46:31 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1a2e0d57] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 17:46:32 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 17:46:32 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 17:46:32 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 17:46:32 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@712cd5d3{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@2094bf3d{STARTED}}
+2026-10-29 17:46:32 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@712cd5d3{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@2094bf3d{STARTED}}
+2026-10-29 17:46:32 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@3a4e524{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 17:46:32 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@5e67a490{STARTING}[12.1.12,sto=0] @287ms
+2026-10-29 17:46:32 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 17:46:32 [main] INFO  io.javalin.Javalin - Javalin started in 612ms \o/
+2026-10-29 17:46:32 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 17:46:33 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 17:48:06 [JettyServerThreadPool-45] ERROR app.config.AplicationConfig - Validation failed
+2026-10-29 17:48:14 [JettyServerThreadPool-33] ERROR app.config.AplicationConfig - Validation failed
+2026-10-29 17:50:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 17:50:32 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 17:50:33 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 17:50:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 17:50:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 17:50:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 17:50:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 17:50:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 17:50:33 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 17:50:34 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 17:50:35 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@632b305d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 17:50:36 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 17:50:36 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 17:50:36 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 17:50:37 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@2b682e9{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@15586843{STARTED}}
+2026-10-29 17:50:37 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@2b682e9{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@15586843{STARTED}}
+2026-10-29 17:50:37 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@45e7bb79{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 17:50:37 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@605c7a9e{STARTING}[12.1.12,sto=0] @188ms
+2026-10-29 17:50:37 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 17:50:37 [main] INFO  io.javalin.Javalin - Javalin started in 619ms \o/
+2026-10-29 17:50:37 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 17:50:37 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 17:50:42 [JettyServerThreadPool-40] ERROR app.config.AplicationConfig - Validation failed
+2026-10-29 17:50:52 [JettyServerThreadPool-31] ERROR app.config.AplicationConfig - Validation failed
+2026-10-29 17:53:21 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 17:53:21 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 17:53:21 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 17:53:21 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 17:53:21 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 17:53:21 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 17:53:21 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 17:53:21 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 17:53:22 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 17:53:23 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 17:53:24 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3830f918] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 17:53:25 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 17:53:25 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 17:53:25 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 17:53:25 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@2084e65a{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@1b8fa2fa{STARTED}}
+2026-10-29 17:53:25 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@2084e65a{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@1b8fa2fa{STARTED}}
+2026-10-29 17:53:25 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@605c7a9e{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 17:53:25 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@21c75084{STARTING}[12.1.12,sto=0] @203ms
+2026-10-29 17:53:25 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 17:53:25 [main] INFO  io.javalin.Javalin - Javalin started in 629ms \o/
+2026-10-29 17:53:25 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 17:53:25 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 17:53:33 [JettyServerThreadPool-40] ERROR app.config.AplicationConfig - Validation failed
+2026-10-29 17:57:15 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 17:57:15 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 17:57:16 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 17:57:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 17:57:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 17:57:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 17:57:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 17:57:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 17:57:17 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 17:57:17 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 17:57:19 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@38a4e2b0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 17:57:20 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 17:57:20 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 17:57:20 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 17:57:20 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@1d8e9d3e{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@360d41d0{STARTED}}
+2026-10-29 17:57:20 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@1d8e9d3e{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@360d41d0{STARTED}}
+2026-10-29 17:57:20 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@21c75084{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 17:57:20 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@d16209e{STARTING}[12.1.12,sto=0] @187ms
+2026-10-29 17:57:20 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 17:57:20 [main] INFO  io.javalin.Javalin - Javalin started in 646ms \o/
+2026-10-29 17:57:20 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 17:57:20 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 17:57:27 [JettyServerThreadPool-40] WARN  io.javalin.Javalin - Exception handler for ValidationException threw an error
+com.fasterxml.jackson.databind.JsonMappingException: Cannot invoke "app.entities.Role.toString()" because the return value of "app.entities.User.getRole()" is null (through reference chain: java.util.Collections$SingletonMap["REQUEST_BODY"]->java.util.Collections$SingletonList[0]->io.javalin.validation.ValidationError["value"]->app.entities.Review["user"]->app.entities.User["roleAsStrings"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:400)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:359)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:324)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:765)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeFields(MapSerializer.java:807)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serializeWithoutTypeInfo(MapSerializer.java:763)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:719)
+	at com.fasterxml.jackson.databind.ser.std.MapSerializer.serialize(MapSerializer.java:34)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4938)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:4146)
+	at io.javalin.json.JavalinJackson.toJsonString(JavalinJackson.kt:51)
+	at io.javalin.http.Context.json(Context.kt:489)
+	at io.javalin.http.Context.json(Context.kt:492)
+	at io.javalin.validation.Validation$Companion$addValidationExceptionMapper$1.handle(Validation.kt:56)
+	at io.javalin.validation.Validation$Companion$addValidationExceptionMapper$1.handle(Validation.kt:55)
+	at io.javalin.router.exception.ExceptionMapper.handleExceptionSafely(ExceptionMapper.kt:48)
+	at io.javalin.router.exception.ExceptionMapper.handle$javalin(ExceptionMapper.kt:41)
+	at io.javalin.router.InternalRouter.handleHttpException(InternalRouter.kt:110)
+	at io.javalin.http.servlet.JavalinServlet.handleTask$lambda$0(JavalinServlet.kt:112)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:108)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:72)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:58)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:38)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:49)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at org.eclipse.jetty.ee10.servlet.ServletHolder.handle(ServletHolder.java:754)
+	at org.eclipse.jetty.ee10.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1642)
+	at org.eclipse.jetty.ee10.servlet.ServletHandler$MappedServlet.handle(ServletHandler.java:1556)
+	at org.eclipse.jetty.ee10.servlet.ServletChannel.dispatch(ServletChannel.java:871)
+	at org.eclipse.jetty.ee10.servlet.ServletChannel.handle(ServletChannel.java:449)
+	at org.eclipse.jetty.ee10.servlet.ServletHandler.handle(ServletHandler.java:469)
+	at org.eclipse.jetty.ee10.servlet.SessionHandler.handle(SessionHandler.java:719)
+	at org.eclipse.jetty.server.handler.ContextHandler.handle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.Handler$Wrapper.handle(Handler.java:794)
+	at org.eclipse.jetty.server.handler.EventsHandler.handle(EventsHandler.java:81)
+	at org.eclipse.jetty.server.Server.handle(Server.java:197)
+	at org.eclipse.jetty.server.internal.HttpChannelState$HandlerInvoker.run(HttpChannelState.java:804)
+	at org.eclipse.jetty.server.internal.HttpConnection.onFillable(HttpConnection.java:420)
+	at org.eclipse.jetty.server.internal.HttpConnection$FillableCallback.succeeded(HttpConnection.java:1790)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:54)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:1009)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1240)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1194)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.NullPointerException: Cannot invoke "app.entities.Role.toString()" because the return value of "app.entities.User.getRole()" is null
+	at app.entities.User.getRoleAsStrings(User.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:688)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)
+	... 54 common frames omitted
+2026-10-29 17:57:27 [JettyServerThreadPool-40] WARN  io.javalin.Javalin - Uncaught exception
+io.javalin.validation.ValidationException: Validation failed
+	at io.javalin.validation.Validator.get(Validator.kt:70)
+	at app.controllers.ReviewController.create(ReviewController.java:50)
+	at io.javalin.router.ParsedEndpoint.handleWithPathParams$javalin(ParsedEndpoint.kt:21)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$0$1(DefaultTasks.kt:57)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:108)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:72)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:58)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:38)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:49)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at org.eclipse.jetty.ee10.servlet.ServletHolder.handle(ServletHolder.java:754)
+	at org.eclipse.jetty.ee10.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1642)
+	at org.eclipse.jetty.ee10.servlet.ServletHandler$MappedServlet.handle(ServletHandler.java:1556)
+	at org.eclipse.jetty.ee10.servlet.ServletChannel.dispatch(ServletChannel.java:871)
+	at org.eclipse.jetty.ee10.servlet.ServletChannel.handle(ServletChannel.java:449)
+	at org.eclipse.jetty.ee10.servlet.ServletHandler.handle(ServletHandler.java:469)
+	at org.eclipse.jetty.ee10.servlet.SessionHandler.handle(SessionHandler.java:719)
+	at org.eclipse.jetty.server.handler.ContextHandler.handle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.Handler$Wrapper.handle(Handler.java:794)
+	at org.eclipse.jetty.server.handler.EventsHandler.handle(EventsHandler.java:81)
+	at org.eclipse.jetty.server.Server.handle(Server.java:197)
+	at org.eclipse.jetty.server.internal.HttpChannelState$HandlerInvoker.run(HttpChannelState.java:804)
+	at org.eclipse.jetty.server.internal.HttpConnection.onFillable(HttpConnection.java:420)
+	at org.eclipse.jetty.server.internal.HttpConnection$FillableCallback.succeeded(HttpConnection.java:1790)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:54)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:1009)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1240)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1194)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-10-29 18:03:19 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 18:03:19 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 18:03:20 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 18:03:20 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 18:03:20 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 18:03:20 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 18:03:20 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 18:03:20 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 18:03:21 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 18:03:21 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 18:03:23 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@27a6fef2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 18:03:24 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 18:03:24 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 18:03:24 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 18:03:24 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@54463380{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@819fb19{STARTED}}
+2026-10-29 18:03:24 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@54463380{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@819fb19{STARTED}}
+2026-10-29 18:03:24 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@605c7a9e{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 18:03:24 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@21c75084{STARTING}[12.1.12,sto=0] @169ms
+2026-10-29 18:03:24 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 18:03:24 [main] INFO  io.javalin.Javalin - Javalin started in 653ms \o/
+2026-10-29 18:03:24 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 18:03:24 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 18:09:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 18:09:05 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 18:09:05 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 18:09:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 18:09:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 18:09:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 18:09:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 18:09:05 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 18:09:06 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 18:09:07 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 18:09:08 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@118acf70] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 18:09:10 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 18:09:10 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 18:09:10 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 18:09:10 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@23afc725{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@5d3f99d7{STARTED}}
+2026-10-29 18:09:10 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@23afc725{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@5d3f99d7{STARTED}}
+2026-10-29 18:09:10 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@1d6713dd{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 18:09:10 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@3b39e79b{STARTING}[12.1.12,sto=0] @224ms
+2026-10-29 18:09:10 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 18:09:10 [main] INFO  io.javalin.Javalin - Javalin started in 758ms \o/
+2026-10-29 18:09:10 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 18:09:10 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 18:10:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 18:10:26 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 18:10:27 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 18:10:27 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 18:10:27 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 18:10:27 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 18:10:27 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 18:10:27 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 18:10:28 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 18:10:29 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 18:10:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 18:10:39 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 18:10:40 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 18:10:40 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 18:10:40 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 18:10:40 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 18:10:40 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 18:10:40 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 18:10:40 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 18:10:41 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 18:10:42 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@14c99bf6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 18:10:43 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 18:10:43 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 18:10:43 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 18:10:43 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@360d41d0{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@4586a8aa{STARTED}}
+2026-10-29 18:10:43 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@360d41d0{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@4586a8aa{STARTED}}
+2026-10-29 18:10:43 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@4b6b5352{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 18:10:43 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@1d6713dd{STARTING}[12.1.12,sto=0] @187ms
+2026-10-29 18:10:43 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 18:10:43 [main] INFO  io.javalin.Javalin - Javalin started in 687ms \o/
+2026-10-29 18:10:43 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 18:10:43 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 18:16:33 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 18:16:33 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 18:16:33 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 18:16:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 18:16:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 18:16:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 18:16:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 18:16:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 18:16:34 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 18:16:35 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 18:16:36 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6bcae9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 18:16:37 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 18:16:37 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 18:16:37 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 18:16:37 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@8b670c0{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@4c2ab536{STARTED}}
+2026-10-29 18:16:37 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@8b670c0{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@4c2ab536{STARTED}}
+2026-10-29 18:16:38 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@4b6b5352{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 18:16:38 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@1d6713dd{STARTING}[12.1.12,sto=0] @188ms
+2026-10-29 18:16:38 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 18:16:38 [main] INFO  io.javalin.Javalin - Javalin started in 635ms \o/
+2026-10-29 18:16:38 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 18:16:38 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
+2026-10-29 18:18:58 [JettyServerThreadPool-41] ERROR app.config.AplicationConfig - Validation failed
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 6, column: 1]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2675)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:743)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddName(ReaderBasedJsonParser.java:1909)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:709)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:425)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1502)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:340)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:5052)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3954)
+	at io.javalin.json.JavalinJackson.fromJsonString(JavalinJackson.kt:68)
+	at io.javalin.http.Context.bodyAsClass(Context.kt:152)
+	at io.javalin.http.Context.bodyAsClass(Context.kt:157)
+	at app.controllers.SecurityController.register(SecurityController.java:75)
+	at io.javalin.router.ParsedEndpoint.handleWithPathParams$javalin(ParsedEndpoint.kt:21)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$0$1(DefaultTasks.kt:57)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:108)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:72)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:58)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:38)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:49)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at org.eclipse.jetty.ee10.servlet.ServletHolder.handle(ServletHolder.java:754)
+	at org.eclipse.jetty.ee10.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1642)
+	at org.eclipse.jetty.ee10.servlet.ServletHandler$MappedServlet.handle(ServletHandler.java:1556)
+	at org.eclipse.jetty.ee10.servlet.ServletChannel.dispatch(ServletChannel.java:871)
+	at org.eclipse.jetty.ee10.servlet.ServletChannel.handle(ServletChannel.java:449)
+	at org.eclipse.jetty.ee10.servlet.ServletHandler.handle(ServletHandler.java:469)
+	at org.eclipse.jetty.ee10.servlet.SessionHandler.handle(SessionHandler.java:719)
+	at org.eclipse.jetty.server.handler.ContextHandler.handle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.Handler$Wrapper.handle(Handler.java:794)
+	at org.eclipse.jetty.server.handler.EventsHandler.handle(EventsHandler.java:81)
+	at org.eclipse.jetty.server.Server.handle(Server.java:197)
+	at org.eclipse.jetty.server.internal.HttpChannelState$HandlerInvoker.run(HttpChannelState.java:804)
+	at org.eclipse.jetty.server.internal.HttpConnection.onFillable(HttpConnection.java:420)
+	at org.eclipse.jetty.server.internal.HttpConnection$FillableCallback.succeeded(HttpConnection.java:1790)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:54)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:1009)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1240)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1194)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-10-29 18:30:43 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2026-10-29 18:30:43 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2026-10-29 18:30:43 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-10-29 18:30:43 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-10-29 18:30:43 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/gamelibrary]
+2026-10-29 18:30:43 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-10-29 18:30:43 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-10-29 18:30:43 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-10-29 18:30:44 [main] INFO  org.hibernate.orm.beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2026-10-29 18:30:45 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2026-10-29 18:30:47 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6ffd4c0d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-10-29 18:30:48 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+2026-10-29 18:30:48 [main] INFO  org.eclipse.jetty.server.Server - jetty-12.1.12; built: 2026-08-03T22:37:55.389Z; git: 10dd3948f37767b84cc2c62358364f042e51dbbe; jvm 17.0.20.1+10-LTS
+2026-10-29 18:30:48 [main] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-10-29 18:30:48 [main] INFO  o.e.j.server.handler.ContextHandler - Started oeje10s.ServletContextHandler@23c7cb18{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@30fbc23{STARTED}}
+2026-10-29 18:30:48 [main] INFO  o.e.j.e.s.ServletContextHandler - Started oeje10s.ServletContextHandler@23c7cb18{/api,/api,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@30fbc23{STARTED}}
+2026-10-29 18:30:48 [main] INFO  o.e.jetty.server.AbstractConnector - Started oejs.ServerConnector@4b6b5352{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2026-10-29 18:30:48 [main] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@1d6713dd{STARTING}[12.1.12,sto=0] @179ms
+2026-10-29 18:30:48 [main] INFO  io.javalin.Javalin - 
+       __                  ___          _____
+      / /___ __   ______ _/ (_)___     /__  /
+ __  / / __ `/ | / / __ `/ / / __ \      / /
+/ /_/ / /_/ /| |/ / /_/ / / / / / /     / /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/     /_/
+
+       https://javalin.io/documentation
+
+2026-10-29 18:30:48 [main] INFO  io.javalin.Javalin - Javalin started in 733ms \o/
+2026-10-29 18:30:48 [main] INFO  io.javalin.Javalin - Listening on http://localhost:7070/api
+2026-10-29 18:30:48 [main] INFO  io.javalin.Javalin - You are running Javalin 7.2.3 (released August 11, 2026).
