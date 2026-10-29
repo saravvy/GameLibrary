@@ -7,8 +7,6 @@ Så formålet er at skabe et sted, hvor man kan holde styr på hvilke spil man e
 
 ## Links
 
-Deployed application (optional):  
-https://gamelibrary.saraelena.dk/api/routes
 
 Source code repository:  
 https://github.com/saravvy/GameLibrary
